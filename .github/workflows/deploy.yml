@@ -7,6 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:   
+      - name: PHP Syntax Checker (Lint)
+        uses: StephaneBour/actions-php-lint@8.2
+        with:
+          dir: './src'
       - name: DEPLOY
         uses: D3rHase/ssh-command-action@latest
         with:
