@@ -15,5 +15,4 @@ jobs:
           private_key: ${{secrets.KEY}} 
           command: |
             cd test-workflow &&
-            git pull origin main &&
-            service apache2 restart
+            git pull origin main
