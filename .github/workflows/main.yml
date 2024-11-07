@@ -1,0 +1,8 @@
+name: hallo-welt
+on: push
+jobs:
+  my-job:
+    runs-on: debian-latest
+    steps:
+      - name: my-step
+        run: echo "Hallo Welt!"
